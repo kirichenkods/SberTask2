@@ -16,7 +16,7 @@ public class Phonebook {
         phoneBook.put(surname, numbers);
     }
 
-    public String get(String surname) {
-        return phoneBook.containsKey(surname) ? phoneBook.get(surname).toString() : "";
+    public Set<String> get(String surname) {
+        return phoneBook.containsKey(surname) ? phoneBook.get(surname) : new HashSet<>();
     }
 }
